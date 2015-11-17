@@ -1,0 +1,118 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* Large desktops and laptops */
+@media (min-width: 481px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
+}
+
+.a-unstyled { color: #333; }
+.a-unstyled:link { color: #333; }
+.a-unstyled:visited { color: #333; }
+.a-unstyled:hover { color: #000; }
+.a-unstyled:active { color: #333; }
+
+.navbar-inverse .a-unstyled { color: #969696; }
+.navbar-inverse .a-unstyled:link { color: #969696; }
+.navbar-inverse .a-unstyled:visited { color: #969696; }
+.navbar-inverse .a-unstyled:hover { color: #FFF; }
+.navbar-inverse .a-unstyled:active { color: #969696; }
+
+.background {
+   background: url("computer.jpg") no-repeat center center fixed;
+   background-position:5% 5%;
+   background-position:5% 5%\9 !important;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+.fullscreen,
+.content-a {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+.fullscreen.overflow,
+.fullscreen.overflow .content-a {
+    height:auto;
+    min-height:100%;
+}
+
+.thumbnail {
+ background: no-repeat center center fixed;
+ width: 150px;
+ height: auto;
+ border: none;
+}
+
+.mainContent {
+  background-color: #d3d3d3;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.introSpace {
+  padding: 600px 0px 0px 0px;
+}
+
+.first-giant {
+ margin: 0px;
+ color: grey;
+ font-size: 1000%;
+ font-family: "Lucida Console", "Monaco", "monospace";
+ padding: 45px 50px 50px 50px;
+ line-height: 20px;
+}
+.second-giant {
+ padding: 45px 50px 50px 180px;
+ line-height: 20px;
+ margin: 20px;
+ color: grey;
+ font-size: 1000%;
+ font-family: "Lucida Console", "Monaco", "monospace";
+}
+
+.simple {
+ padding: 30px 20px 20px 50px;
+ font-family: "Courier New", "Courier", "monospace";
+}
+
+#buttons {
+ padding: 10px 150px 50px 0px;
+ text-align: right;
+}
+
+.btn {
+ border-radius: 5px;
+ padding: 15px 150px;
+ font-size: 22px;
+ text-decoration: none;
+ margin: 20px;
+ color: #fff;
+ position: relative;
+ display: inline-block;
+}
+
+.btn:active {
+ transform: translate(0px, 5px);
+ -webkit-transform: translate(0px, 5px);
+ box-shadow: 0px 1px 0px 0px;
+}
+
+.blue {
+ background-color: #55acee;
+ box-shadow: 0px 5px 0px 0px #3C93D5;
+}
+
+.blue:hover {
+ background-color: #6FC6FF;
+}
