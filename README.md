@@ -1,4 +1,4 @@
-Alpha-Blog : Complete Ruby on Rails Developer Udemy course.
+<h1>Alpha-Blog : Complete Ruby on Rails Developer Udemy course.</h1>
 
 <h3>Heroku setup</h3>
 
@@ -13,3 +13,7 @@ Alpha-Blog : Complete Ruby on Rails Developer Udemy course.
   <p>gem 'pg'</p>
   <p>gem 'rails_12factor'</p>
 <p>end</p>
+
+<h4>$ heroku create</h4>
+<h4>$ git push heroku master</h4>
+<h4>$ heroku rename [new-name]</h4>
