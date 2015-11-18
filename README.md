@@ -2,39 +2,40 @@
 
 <h2>Heroku setup</h2>
 
-<h4>move:</h4>
-<p>gem 'sqlite3'</p>
+<p>move:<br>
+gem 'sqlite3'</p>
 
-<p>group :development, :test do</p>
-<p>end<p>
+<p>group :development, :test do<br>
+gem 'sqlite3'<br>
+end</p>
 
-<h4>add:</h4>
-<p>group :production do</p>
-  <p>gem 'pg'</p>
-  <p>gem 'rails_12factor'</p>
-<p>end</p>
+<p>add:<br>
+group :production do<br>
+  gem 'pg'<br>
+  gem 'rails_12factor'<br>
+end</p>
 
-<p>$ heroku create</p>
-<p>$ git push heroku master</p>
-<p>$ heroku rename [new-name]</p>
-<p></p>
+<p>$ heroku create<br>
+$ git push heroku master<br>
+$ heroku rename [new-name]</p>
 
-<h2>Models and migrations<h2>
+<h2>Models and migrations</h2>
 
 <h4>Create migration</h4>
 <p>$ rails g migration create_articles title:string description:text</p>
+
 <h4>Rollback a migration</h4>
 <p>$ rake db:rollback</p>
 
 <h4>Add a migration to an existing table</h4>
-<p>$ rails g migration add_description_to_articles</p>
-<p>class AddDescriptionToArticles < ActiveRecord::Migration</p>
-  <p>def change</p>
-    <p>add_column :articles, :description, :text</p>
-    <p>add_column :articles, :created_at, :datetime</p>
-    <p>add_column :articles, :updated_at, :datetime</p>
-  <p>end</p>
-<p>end</p>
+<p>$ rails g migration add_description_to_articles<br>
+class AddDescriptionToArticles < ActiveRecord::Migration<br>
+  def change<br>
+    add_column :articles, :description, :text<br>
+    add_column :articles, :created_at, :datetime<br>
+    add_column :articles, :updated_at, :datetime<br>
+  end<br>
+end</p>
 
 <h4>Create a model with timestamps</h4>
 <p>$ rails generate model Article title:string description:text</p>
