@@ -1,4 +1,4 @@
-<h1>Alpha-Blog : Complete Ruby on Rails Developer Udemy course notes</h1>
+<h1>Udemy Alpha-Blog : Complete Ruby on Rails Developer - course notes</h1>
 
 <h2>Heroku setup</h2>
 
@@ -49,3 +49,8 @@ end</p>
 <h2>Rails console</h2>
 <p>  article.errors.any?<br>
  article.errors.full_messages</p>
+
+ <h2>Routes</h2>
+ <p>add resources :articles</p>
+
+ 
