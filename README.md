@@ -1,4 +1,4 @@
-<h1>Alpha-Blog : Complete Ruby on Rails Developer Udemy course.</h1>
+<h1>Alpha-Blog : Complete Ruby on Rails Developer Udemy course notes</h1>
 
 <h2>Heroku setup</h2>
 
@@ -28,8 +28,8 @@ $ heroku rename [new-name]</p>
 <p>$ rake db:rollback</p>
 
 <h4>Add a migration to an existing table</h4>
-<p>$ rails g migration add_description_to_articles<br>
-class AddDescriptionToArticles < ActiveRecord::Migration<br>
+<p>$ rails g migration add_description_to_articles</p>
+<p>class AddDescriptionToArticles < ActiveRecord::Migration<br>
   def change<br>
     add_column :articles, :description, :text<br>
     add_column :articles, :created_at, :datetime<br>
