@@ -14,6 +14,6 @@
   <p>gem 'rails_12factor'</p>
 <p>end</p>
 
-<h4>$ heroku create</h4>
-<h4>$ git push heroku master</h4>
-<h4>$ heroku rename [new-name]</h4>
+<p>$ heroku create</p>
+<p>$ git push heroku master</p>
+<p>$ heroku rename [new-name]</p>
