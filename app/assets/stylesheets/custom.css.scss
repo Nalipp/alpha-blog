@@ -1,14 +1,25 @@
-@import "bootstrap-sprockets";
-@import "bootstrap";
-
 /* Large desktops and laptops */
 @media (min-width: 481px) {
-
 }
 
 /* Portrait phones and smaller */
 @media (max-width: 480px) {
+}
 
+$navbar-default-bg: black;
+
+#logo {
+    float: left;
+    font-size: 1.7em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+#logo:hover {
+  color: #fff;
+  text-decoration: none;
 }
 
 .a-unstyled { color: #333; }
@@ -116,3 +127,7 @@
 .blue:hover {
  background-color: #6FC6FF;
 }
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";

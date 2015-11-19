@@ -19,6 +19,9 @@ end</p>
 $ git push heroku master<br>
 $ heroku rename [new-name]</p>
 
+<h4>After adding migrations</h4>
+<p>$ heroku run rake db:migrate</p>
+
 <h2>Models and migrations</h2>
 
 <h4>Create migration</h4>
@@ -52,5 +55,3 @@ end</p>
 
  <h2>Routes</h2>
  <p>add resources :articles</p>
-
- 
