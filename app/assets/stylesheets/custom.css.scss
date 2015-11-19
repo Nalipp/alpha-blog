@@ -1,3 +1,5 @@
+$navbar-default-bg: black;
+
 /* Large desktops and laptops */
 @media (min-width: 481px) {
 }
@@ -6,7 +8,8 @@
 @media (max-width: 480px) {
 }
 
-$navbar-default-bg: black;
+@import "bootstrap-sprockets";
+@import "bootstrap";
 
 #logo {
     float: left;
@@ -35,7 +38,7 @@ $navbar-default-bg: black;
 .navbar-inverse .a-unstyled:active { color: #969696; }
 
 .background {
-   background: image-url("computer.jpg") no-repeat center center fixed;
+   background: asset-url("computer.jpg") no-repeat center center fixed;
    background-position:5% 5%;
    background-position:5% 5%\9 !important;
    -webkit-background-size: cover;
@@ -128,6 +131,27 @@ $navbar-default-bg: black;
  background-color: #6FC6FF;
 }
 
+.footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
 
-@import "bootstrap-sprockets";
-@import "bootstrap";
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style:none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
