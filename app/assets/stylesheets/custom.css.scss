@@ -100,12 +100,12 @@ $navbar-default-bg: black;
  font-family: "Courier New", "Courier", "monospace";
 }
 
-#buttons {
+#buttons-custom {
  padding: 10px 150px 50px 0px;
  text-align: right;
 }
 
-.btn {
+.btn-custom {
  border-radius: 5px;
  padding: 15px 150px;
  font-size: 22px;
@@ -116,7 +116,7 @@ $navbar-default-bg: black;
  display: inline-block;
 }
 
-.btn:active {
+.btn-custom:active {
  transform: translate(0px, 5px);
  -webkit-transform: translate(0px, 5px);
  box-shadow: 0px 1px 0px 0px;
@@ -127,7 +127,7 @@ $navbar-default-bg: black;
  box-shadow: 0px 5px 0px 0px #3C93D5;
 }
 
-.blue:hover {
+.blue-custom:hover {
  background-color: #6FC6FF;
 }
 

@@ -11,7 +11,7 @@
       <%= render 'layouts/navigation' unless current_page?(root_path) %>
       <%= render 'layouts/messages' %>
       <%= yield %>
-      <%= render 'layouts/footer' %>
+      <%= render 'layouts/footer' unless current_page?(root_path)%>
 
   </body>
 </html>
