@@ -11,6 +11,11 @@ $navbar-default-bg: black;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.navbar-default {
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+}
+
 #logo {
     float: left;
     font-size: 1.7em;
