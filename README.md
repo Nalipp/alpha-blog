@@ -57,12 +57,12 @@ end</p>
  <p>add resources :articles</p>
 
 <h2>Git branch</h2>
-<p>git branch<p>
+<p>$ git branch<p>
 
 <h4>Create a feature branch</h4>
-<p>git checkout -b [branch name]</p>
-<p>git checkout master</p>
-<p>git merge [branch name]</p>
+<p>$ git checkout -b [branch name]<br>
+$ git checkout master<br>
+$ git merge [branch name]</p>
 
 <h4>Delete a feature branch</h4>
 <p>git branch -d [branch name]</p>
