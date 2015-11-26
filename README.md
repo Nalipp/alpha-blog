@@ -49,9 +49,20 @@ end</p>
   validates :description, presence: true, length: { minimum: 10, maximum: 300 }<br>
 end</p>
 
+<p>class User < ActiveRecord::Base<br>
+before_save { self.email = email.downcase }</br>
+validates :username, presence: true,</br>
+          uniqueness: { case_sensitive: false },</br>
+          length: { minimum: 3, maximum: 25 }</br>
+VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i</br>
+validates :email, presence: true, length: { maximum: 105 },</br>
+          uniqueness: { case_sensitive: false },</br>
+          format: { with: VALID_EMAIL_REGEX }</p>
+
 <h2>Rails console</h2>
-<p>  article.errors.any?<br>
- article.errors.full_messages</p>
+<p>$ article.errors.any?<br>
+$ article.errors.full_messages<br>
+$ user.authenticate("password")</p>
 
  <h2>Routes</h2>
  <p>add resources :articles</p>
@@ -66,3 +77,24 @@ $ git merge [branch name]</p>
 
 <h4>Delete a feature branch</h4>
 <p>git branch -d [branch name]</p>
+
+<h2>Create password digest</h2>
+
+<h4>update gemfile</h4>
+
+<p>gem 'bcrypt'<br>
+$ bundle install --without production</p>
+
+<h4>add to password_digest to User migration</h4>
+
+<p>$ rails g migration add_password_digest_to_users<br><br>
+
+def change<br>
+  add_column :users, :password_digest, :string<br>
+end<br>
+
+$rake db:migrate</p>
+
+<h4>update user.rb model</h4>
+
+<p>add: has_secure_password<br>
