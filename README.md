@@ -99,3 +99,22 @@ $rake db:migrate</p>
 
 <p>add:<br>
  has_secure_password</p>
+
+ <h2>Add paginate</h2>
+
+ <h4>Gemfile</h4>
+
+ <p>gem 'will_paginate', '3.0.7'<br>
+ gem 'bootstrap-will_paginate', '0.0.10'</p>
+
+<h4>articles_controller.rb</h4>
+
+<p>def index<br>
+    @articles = Article.paginate(page: params[:page], per_page: 5)<br>
+end</p>
+
+<h4>articles/index.html.erb</h4>
+
+<p><div align="center"><br>
+  <%= will_paginate %><br>
+</div></p>
