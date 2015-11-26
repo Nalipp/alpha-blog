@@ -3,13 +3,31 @@ class UsersController < ApplicationController
     @user = User.new
   end
 
+  def index
+    @user = User.all
+  end
+
+  def edit
+    @user = User.find(params[:id])
+  end
+
+  def update
+    @user = User.find(params[:id])
+    if @user.update(user_params)
+      flash[:success] = "Update was successful"
+      redirect_to articles_path
+    else
+      render 'edit'
+    end
+  end
+
   def create
     @user = User.new(user_params)
     if @user.save
       flash[:success] = "Hello #{@user.username}! signup was successful"
       redirect_to articles_path
     else
-      render 'new'
+      render 'users/new'
     end
   end
 
