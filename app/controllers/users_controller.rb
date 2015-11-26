@@ -1,10 +1,10 @@
 class UsersController < ApplicationController
-  def new
-    @user = User.new
+  def index
+    @users = User.all
   end
 
-  def index
-    @user = User.all
+  def new
+    @user = User.new
   end
 
   def edit
