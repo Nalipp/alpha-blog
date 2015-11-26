@@ -25,10 +25,14 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       flash[:success] = "Hello #{@user.username}! signup was successful"
-      redirect_to articles_path
+      redirect_to user_path(@user)
     else
       render 'users/new'
     end
+  end
+
+  def show
+    @user = User.find(params[:id])
   end
 
     private
