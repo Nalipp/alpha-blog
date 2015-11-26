@@ -97,4 +97,5 @@ $rake db:migrate</p>
 
 <h4>update user.rb model</h4>
 
-<p>add: has_secure_password<br>
+<p>add:<br>
+ has_secure_password</p>
