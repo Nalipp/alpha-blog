@@ -61,8 +61,9 @@ validates :email, presence: true, length: { maximum: 105 },</br>
 
 <h2>Rails console</h2>
 <p>$ article.errors.any?<br>
-$ article.errors.full_messages<br>
-$ user.authenticate("password")</p>
+article.errors.full_messages<br>
+user.authenticate("password")<br>
+user.toggle!(:admin)</p>
 
  <h2>Routes</h2>
  <p>add resources :articles</p>
