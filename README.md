@@ -115,6 +115,6 @@ end</p>
 
 <h4>articles/index.html.erb</h4>
 
-<p><div align="center"><br>
+div align="center"><br>
   <%= will_paginate %><br>
-</div></p>
+/div>
