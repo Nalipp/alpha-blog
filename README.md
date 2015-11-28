@@ -22,6 +22,9 @@ $ heroku rename [new-name]</p>
 <h4>After adding migrations</h4>
 <p>$ heroku run rake db:migrate</p>
 
+<h4>Enable admin permissions in heroku<h4>
+<p>$ heroku run rails console<br>
+
 <h2>Models and migrations</h2>
 
 <h4>Create migration</h4>
