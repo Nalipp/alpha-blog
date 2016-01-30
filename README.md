@@ -128,3 +128,7 @@ div align="center"><br>
 <p>https://www.railstutorial.org/book/_single-page#code-db_seed</p>
 <p>bundle exec rake db:migrate:reset</p>
 <p>bundle exec rake db:seed</p>
+<h4>Heroku</h4>
+<p>heroku pg:reset DATABASE</p>
+<p>heroku run rake db:migrate</p>
+<p>heroku run rake db:seed</p>
