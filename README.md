@@ -122,3 +122,9 @@ end</p>
 div align="center"><br>
   <%= will_paginate %><br>
 /div>
+
+<h2>Seeding</h2>
+<h4>gem 'faker', '~> 1.6', '>= 1.6.1'</h4>
+<p>https://www.railstutorial.org/book/_single-page#code-db_seed</p>
+<p>bundle exec rake db:migrate:reset</p>
+<p>bundle exec rake db:seed</p>
